@@ -19,8 +19,8 @@ function Home() {
 
   return (
     <main className="page">
-      <h1>Local Election</h1>
-      <p className="subtitle">A minimal starter layout with React Router.</p>
+      <h1>Local Election (India)</h1>
+      <p className="subtitle">Mock local election experience using Indian states and constituencies.</p>
 
       <div style={{ marginTop: '3rem' }}>
         <RegionSelector />

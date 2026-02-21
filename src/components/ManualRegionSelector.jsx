@@ -7,18 +7,18 @@ function ManualRegionSelector({ onSelect, onCancel }) {
   const [customLng, setCustomLng] = useState('')
   const [useCustom, setUseCustom] = useState(false)
 
-  // Common regions with approximate coordinates
+  // Common Indian cities with approximate coordinates
   const regions = [
-    { name: 'New York, NY', lat: 40.7128, lng: -74.0060 },
-    { name: 'Los Angeles, CA', lat: 34.0522, lng: -118.2437 },
-    { name: 'Chicago, IL', lat: 41.8781, lng: -87.6298 },
-    { name: 'Houston, TX', lat: 29.7604, lng: -95.3698 },
-    { name: 'Phoenix, AZ', lat: 33.4484, lng: -112.0740 },
-    { name: 'Philadelphia, PA', lat: 39.9526, lng: -75.1652 },
-    { name: 'San Antonio, TX', lat: 29.4241, lng: -98.4936 },
-    { name: 'San Diego, CA', lat: 32.7157, lng: -117.1611 },
-    { name: 'Dallas, TX', lat: 32.7767, lng: -96.7970 },
-    { name: 'San Jose, CA', lat: 37.3382, lng: -121.8863 }
+    { name: 'New Delhi, Delhi', lat: 28.6139, lng: 77.2090 },
+    { name: 'Mumbai, Maharashtra', lat: 19.0760, lng: 72.8777 },
+    { name: 'Kolkata, West Bengal', lat: 22.5726, lng: 88.3639 },
+    { name: 'Chennai, Tamil Nadu', lat: 13.0827, lng: 80.2707 },
+    { name: 'Bengaluru, Karnataka', lat: 12.9716, lng: 77.5946 },
+    { name: 'Hyderabad, Telangana', lat: 17.3850, lng: 78.4867 },
+    { name: 'Ahmedabad, Gujarat', lat: 23.0225, lng: 72.5714 },
+    { name: 'Pune, Maharashtra', lat: 18.5204, lng: 73.8567 },
+    { name: 'Jaipur, Rajasthan', lat: 26.9124, lng: 75.7873 },
+    { name: 'Lucknow, Uttar Pradesh', lat: 26.8467, lng: 80.9462 }
   ]
 
   const handleRegionSelect = (e) => {
@@ -59,7 +59,7 @@ function ManualRegionSelector({ onSelect, onCancel }) {
     <div className="manual-region-selector">
       <h3>Select Your Region</h3>
       <p className="selector-subtitle">
-        Please select your region manually since location access was denied.
+        Please select your region within India manually if location access is unavailable.
       </p>
 
       <div className="selector-tabs">
@@ -102,7 +102,7 @@ function ManualRegionSelector({ onSelect, onCancel }) {
               step="any"
               value={customLat}
               onChange={(e) => setCustomLat(e.target.value)}
-              placeholder="e.g., 40.7128"
+              placeholder="e.g., 28.6139"
               required
             />
           </div>
@@ -114,7 +114,7 @@ function ManualRegionSelector({ onSelect, onCancel }) {
               step="any"
               value={customLng}
               onChange={(e) => setCustomLng(e.target.value)}
-              placeholder="e.g., -74.0060"
+              placeholder="e.g., 77.2090"
               required
             />
           </div>

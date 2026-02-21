@@ -101,7 +101,7 @@ function RegionSelector() {
 
       <div className="selector-fields">
         <div className="field-group">
-          <label htmlFor="state-select">State</label>
+          <label htmlFor="state-select">State / UT</label>
           <select
             id="state-select"
             value={selectedState}
@@ -119,7 +119,7 @@ function RegionSelector() {
         </div>
 
         <div className="field-group">
-          <label htmlFor="district-select">District</label>
+          <label htmlFor="district-select">Constituency</label>
           <select
             id="district-select"
             value={selectedDistrict}
@@ -131,8 +131,8 @@ function RegionSelector() {
               {!selectedState
                 ? 'Select a state first'
                 : districts.length === 0
-                ? 'No districts available'
-                : 'Select a district...'}
+                ? 'No constituencies available'
+                : 'Select a constituency...'}
             </option>
             {districts.map((district) => (
               <option key={district} value={district}>

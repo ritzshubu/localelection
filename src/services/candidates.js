@@ -1,4 +1,4 @@
-// Mock candidate data service
+// Mock candidate data service (India-focused)
 
 // Generate mock candidates for a given region
 export function getCandidatesForRegion(state, district) {
@@ -6,38 +6,38 @@ export function getCandidatesForRegion(state, district) {
   const allCandidates = [
     {
       id: 1,
-      name: 'Sarah Johnson',
-      party: 'Democratic',
-      partyColor: '#1e40af',
-      bio: 'Experienced public servant with 15 years in local government.'
+      name: 'Amit Sharma',
+      party: 'Bharatiya Janata Party',
+      partyColor: '#ff8f00',
+      bio: 'Grassroots leader focused on infrastructure and development.'
     },
     {
       id: 2,
-      name: 'Michael Chen',
-      party: 'Republican',
-      partyColor: '#dc2626',
-      bio: 'Business leader and community advocate.'
+      name: 'Priya Nair',
+      party: 'Indian National Congress',
+      partyColor: '#1e40af',
+      bio: 'Lawyer and social worker advocating for inclusive growth.'
     },
     {
       id: 3,
-      name: 'Emily Rodriguez',
-      party: 'Independent',
-      partyColor: '#059669',
-      bio: 'Education reform advocate and former teacher.'
+      name: 'Ravi Kumar',
+      party: 'Aam Aadmi Party',
+      partyColor: '#16a34a',
+      bio: 'Anti-corruption activist with a focus on local governance.'
     },
     {
       id: 4,
-      name: 'David Thompson',
-      party: 'Democratic',
-      partyColor: '#1e40af',
-      bio: 'Environmental policy expert and former city council member.'
+      name: 'Farah Siddiqui',
+      party: 'All India Trinamool Congress',
+      partyColor: '#0ea5e9',
+      bio: 'Education and health champion with years of field work.'
     },
     {
       id: 5,
-      name: 'James Wilson',
-      party: 'Republican',
-      partyColor: '#dc2626',
-      bio: 'Veteran and small business owner.'
+      name: 'Sanjay Verma',
+      party: 'Independent',
+      partyColor: '#64748b',
+      bio: 'Local entrepreneur representing non-partisan citizens voice.'
     }
   ]
 
@@ -57,11 +57,12 @@ export function getCandidatesForRegion(state, district) {
 // Get party abbreviation
 export function getPartyAbbreviation(party) {
   const abbreviations = {
-    'Democratic': 'D',
-    'Republican': 'R',
-    'Independent': 'I',
-    'Green': 'G',
-    'Libertarian': 'L'
+    'Bharatiya Janata Party': 'BJP',
+    'Indian National Congress': 'INC',
+    'Aam Aadmi Party': 'AAP',
+    'All India Trinamool Congress': 'TMC',
+    'Bahujan Samaj Party': 'BSP',
+    'Independent': 'IND'
   }
   return abbreviations[party] || party.charAt(0)
 }
