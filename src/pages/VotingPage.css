@@ -1,0 +1,257 @@
+.voting-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.voting-header {
+  margin-bottom: 2rem;
+}
+
+.voting-header h1 {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+  color: #111827;
+}
+
+.region-info {
+  padding: 1rem;
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.region-info p {
+  margin: 0;
+  color: #374151;
+}
+
+.region-info strong {
+  color: #111827;
+}
+
+.success-message {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  background-color: #d1fae5;
+  border: 1px solid #10b981;
+  border-radius: 0.75rem;
+  color: #065f46;
+}
+
+.success-icon {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #10b981;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.success-message h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  color: #065f46;
+}
+
+.success-message p {
+  margin: 0;
+  color: #047857;
+}
+
+.success-message strong {
+  color: #065f46;
+}
+
+.candidates-section {
+  margin-bottom: 2rem;
+}
+
+.candidates-section h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+  color: #111827;
+}
+
+.candidates-subtitle {
+  margin: 0 0 1.5rem;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.candidates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.candidate-card {
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.candidate-card:hover:not(.disabled) {
+  border-color: #9ca3af;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.candidate-card.selected {
+  border-color: #10b981;
+  background-color: #f0fdf4;
+}
+
+.candidate-card.disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.candidate-header {
+  margin-bottom: 1rem;
+}
+
+.candidate-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.candidate-name {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #111827;
+}
+
+.candidate-party {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.party-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.party-name {
+  color: #6b7280;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.candidate-bio {
+  margin: 0 0 1.5rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.vote-button {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #111827;
+  border-radius: 0.5rem;
+  background-color: #111827;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.vote-button:hover:not(:disabled) {
+  background-color: #020617;
+  border-color: #020617;
+}
+
+.vote-button:disabled {
+  background-color: #9ca3af;
+  border-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.vote-button.voted {
+  background-color: #10b981;
+  border-color: #10b981;
+  cursor: default;
+}
+
+.vote-button.voted:hover {
+  background-color: #10b981;
+}
+
+.safeguards-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #f9fafb;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+}
+
+.safeguards-section h3 {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+  color: #111827;
+}
+
+.safeguard-errors {
+  margin-top: 1rem;
+}
+
+.error-message {
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  background-color: #fee2e2;
+  border: 1px solid #fca5a5;
+  border-radius: 0.5rem;
+  color: #991b1b;
+  font-size: 0.9rem;
+}
+
+.voting-footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.loading-container {
+  text-align: center;
+  padding: 3rem;
+  color: #6b7280;
+}
+
+@media (max-width: 640px) {
+  .voting-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .candidate-card {
+    padding: 1.25rem;
+  }
+
+  .candidate-name {
+    font-size: 1.25rem;
+  }
+
+  .success-message {
+    flex-direction: column;
+    text-align: center;
+  }
+}

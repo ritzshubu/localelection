@@ -1,0 +1,154 @@
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  background-color: #ffffff;
+  position: sticky;
+  top: 3.5rem; /* Account for disclaimer banner */
+  z-index: 10;
+}
+
+.brand {
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  color: #4b5563;
+}
+
+.nav-link:hover {
+  background-color: #f3f4f6;
+}
+
+.nav-link.active {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+.app-body {
+  flex: 1;
+  padding: 2rem;
+}
+
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  margin-top: 0.5rem;
+  color: #6b7280;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(15, 23, 42, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  z-index: 50;
+}
+
+.modal {
+  width: 100%;
+  max-width: 420px;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1.75rem 1.5rem 1.5rem;
+  box-shadow:
+    0 10px 25px rgba(15, 23, 42, 0.12),
+    0 4px 6px rgba(15, 23, 42, 0.08);
+}
+
+.modal-title {
+  margin: 0 0 1.5rem;
+  font-size: 1.25rem;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.btn {
+  border-radius: 999px;
+  border: 1px solid transparent;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.btn-primary {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+.btn-primary:hover {
+  background-color: #020617;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  border-color: #d1d5db;
+  color: #4b5563;
+}
+
+.btn-secondary:hover {
+  background-color: #f3f4f6;
+}
+
+.geolocation-demo {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f9fafb;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+}
+
+.geolocation-demo h2 {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+  color: #111827;
+}
+
+.location-display {
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.location-display p {
+  margin: 0.5rem 0;
+  color: #374151;
+}
+
+.location-display strong {
+  color: #111827;
+}

@@ -1,0 +1,30 @@
+.results-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.no-region {
+  text-align: center;
+  padding: 3rem;
+  color: #6b7280;
+}
+
+.no-region p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.results-page-footer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+@media (max-width: 640px) {
+  .results-page-footer {
+    flex-direction: column;
+  }
+}
